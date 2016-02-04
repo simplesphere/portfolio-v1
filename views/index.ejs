@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+  <% include partials/head.ejs %>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+  	<!-- Start Header -->
+  	<% include partials/header.ejs %>
+
+  	<main id="main-content">
+  		<div class="container">
+  				<div class="row">
+			  		<div class="row col-md-12">
+					    <h1><%= title %></h1>
+					    <p>Welcome to <%= title %></p>
+			  		</div>
+  				</div>
+  		</div>
+  	</main>
+
+    <!-- Start Footer -->
+    <% include partials/footer.ejs %>
+
+    <!-- Javascript Files -->
+    <% include partials/jsdefaults.ejs %>
   </body>
 </html>
