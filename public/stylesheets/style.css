@@ -209,3 +209,11 @@ a.link:after {
   -webkit-transition: background-position 0.2s ease-in-out;
   transition: background-position 0.2s ease-in-out;
 }
+
+
+/* ==================================================
+Main Content
+ ================================================== */
+#main-content {
+  padding-top: 100px;
+}
