@@ -12,8 +12,8 @@ router.get('/about', function(req, res, next) {
 });
 
 /* GET Skills Page. */
-router.get('/service', function(req, res, next) {
-  res.render('service', { title: 'Service' });
+router.get('/skills', function(req, res, next) {
+  res.render('skills', { title: 'Service' });
 });
 
 /* GET Portfolio Page. */
