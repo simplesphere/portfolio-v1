@@ -402,7 +402,7 @@ html,body {
   border-top: 3px solid #DDD;
   display: inline-block;
   color: #FFF;
-  font-size: 25px;
+  font-size: 19px;
   margin-top: 10px;
 }
 
@@ -489,6 +489,7 @@ Contact
   -o-transition: all .2s ease-in-out;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .contact-form button i {
@@ -589,7 +590,7 @@ Classes
 .divider35 {clear: both; height: 35px;}
 
 .btn {-webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
-.blue-btn { padding: 12px 15px; font-size: 12px; font-family: "Raleway", sans-serif; text-transform: uppercase; font-weight: 700; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; background-color: #00a8d6; color: white;}
+.blue-btn { padding: 12px 15px; font-size: 12px; font-family: "Montserrat", sans-serif; text-transform: uppercase; font-weight: 700; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; background-color: #00a8d6; color: white;}
 .blue-btn:hover { background-color: #31373a; color: #FFF;}
 
 .tick-list {margin: 15px 0;}
@@ -601,3 +602,134 @@ Classes
 .quote span {display: block; font-size: 16px; }
 
 .text-center img {display: block; margin: 0 auto;}
+
+
+
+
+
+/* ==========================================================================
+Portfolio 
+ ========================================================================== */
+.hover-details {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  -moz-transition: all ease 400ms ease-in-out;
+  -webkit-transition: all ease 400ms ease-in-out;
+  -o-transition: all ease 400ms ease-in-out;
+  transition: all ease 400ms ease-in-out;
+  margin-bottom: 40px;
+}
+
+.hover-details .img-cover {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,168,214,0.8);
+  -moz-transition: all ease 400ms ease-in-out;
+  -webkit-transition: all ease 400ms ease-in-out;
+  -o-transition: all ease 400ms ease-in-out;
+  transition: all ease 400ms ease-in-out;
+  border-radius: 3px;
+}
+
+.hover-details > img {
+  width: 100%;
+  height: auto;
+  -moz-transition: all ease 400ms ease-in-out;
+  -webkit-transition: all ease 400ms ease-in-out;
+  -o-transition: all ease 400ms ease-in-out;
+  transition: all ease 400ms ease-in-out;
+}
+
+.img-zoom {
+  width: 50px;
+  height: 50px;
+  background-color: #d5512b;
+  line-height: 50px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  border-radius: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  -webkit-transition: all ease 400ms ease-in-out;
+  -moz-transition: all ease 400ms ease-in-out;
+  -ms-transition: all ease 400ms ease-in-out;
+  -o-transition: all ease 400ms ease-in-out;
+  transition: all ease 400ms ease-in-out;
+  text-align: center;
+}
+
+.img-zoom i {
+  color: #FFF;
+}
+
+.img-cover h3 {
+  width: 100%;
+  position: absolute;
+  bottom: -28%;
+  color: #f8f8f8;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 10px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.hover-details:hover {
+  cursor: pointer;
+}
+
+.hover-details:hover > img {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+
+.hover-details:hover .img-zoom {
+  top: 45%;
+}
+
+.hover-details:hover .img-cover h3 {
+  bottom: 28%;
+}
+
+.hover-details:hover .img-cover {
+  opacity: 1;
+}
+
+.img-zoom:hover {
+  background-color: #333;
+} 
+
+/* =============================================
+Services
+ ============================================= */
+.services-list {
+  margin-bottom: 40px;
+}
+
+.services-list i {
+  background-color: #00a8d6;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  color: #FFF;
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 30px;
+  float: left;
+  margin-right: 20px;
+}
