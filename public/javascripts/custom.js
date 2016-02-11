@@ -1,19 +1,6 @@
 $(document).ready(function() {
 
   // --------------------------------------------------------
-  //	Smooth Scrolling
-  // -------------------------------------------------------- 	
-  $(".navbar-nav li a[href^='#']").on('click', function(e) {
-      e.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-          scrollTop: $(hash).offset().top
-      }, 1000, function() {
-          window.location.hash = hash;
-      });
-  });
-
-  // --------------------------------------------------------
   //	Collapse Navigation (Mobile) on click
   // -------------------------------------------------------- 	
   $(document).on('click', '.navbar-collapse.in', function(e) {
@@ -22,4 +9,18 @@ $(document).ready(function() {
       }
   });
 
+  $(".carousel-caption .rotate").textrotator({
+      animation: "fade", // Text Rotator Fade Effect
+      speed: 2000 // Text Rotator Fade Speed
+  });
+
+  $('.carousel').carousel({
+      interval: 4000, // Carousel Slide Transition Time
+      pause: 'hover' // Carousel slider pause on mouse hover
+  })
+
+  $(".menu-collapsed").click(function() {
+    $(this).toggleClass("menu-expanded");
+  });
+  
 });
